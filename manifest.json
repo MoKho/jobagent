@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "AI Resume Checker",
+  "version": "1.0",
+  "description": "Uses a two-agent AI workflow to analyze a job description and compare it to your resume.",
+  "permissions": [
+    "storage",
+    "contextMenus",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+  "action": {
+    "default_icon": {
+      "48": "icons/icon-48.png"
+    },
+    "default_title": "AI Resume Checker Settings"
+  }
+}
